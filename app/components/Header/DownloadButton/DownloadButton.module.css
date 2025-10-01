@@ -1,0 +1,49 @@
+.button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 24px 6px 6px; 
+  border-radius: 36px;
+  background: #fff;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: box-shadow .2s, transform .2s;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #0f0f12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icon :global(img) {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.label {
+  color: #08050d;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.arrows {
+  display: flex;
+  gap: 4px;
+}
+
+.arrow1 { opacity: 0.2; }
+.arrow2 { opacity: 0.4; }
+.arrow3 { opacity: 0.6; }

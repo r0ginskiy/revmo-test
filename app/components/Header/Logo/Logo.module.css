@@ -1,0 +1,23 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 16px;
+  border-radius: 36px;
+  background: #fff;
+  text-decoration: none;
+  color: #0f0f12;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: box-shadow .2s, transform .2s;
+}
+
+.logo:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.logo span {
+  font-weight: 700; 
+  font-size: 16px;
+  line-height: 20px;
+}
