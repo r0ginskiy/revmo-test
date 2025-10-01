@@ -2,9 +2,7 @@
   position: sticky;
   top: 0;
   z-index: 50;
-  background: #f7f9fc;
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .inner {
@@ -45,7 +43,7 @@
   font-size: 14px;
   padding: 8px 14px;
   border-radius: 999px;
-  transition: background 0.2s;
+  transition: background-color 0.2s;
 }
 
 .menu a:hover {

@@ -1,0 +1,24 @@
+.topAction {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.topAction:hover {
+  opacity: 0.7;
+}
+
+.topAction :global(img) {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.label {
+  color: var(--Black, #08050d);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}

@@ -13,7 +13,7 @@ body {
     Helvetica,
     Arial
   );
-  background: #f6f8fc;
+  background: var(--Extra-light, #eff3f9);
   color: #0f172a;
 }
 * {
