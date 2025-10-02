@@ -27,3 +27,72 @@
 .icon {
   display: block;
 }
+
+.menuButton {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--Black, #08050d);
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100px;
+  left: 60px;
+  background: var(--Black, #08050d);
+  backdrop-filter: blur(18px);
+  border-radius: 24px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  padding: 24px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  z-index: 10;
+}
+
+.dropdownLink {
+  color: var(--White, #fff);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.dropdownLink:hover {
+  opacity: 0.7;
+}
+
+.backLink {
+  background: var(
+    --Gradient-4,
+    linear-gradient(312deg, #bdfff4 -0.21%, #d93497 100.23%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .menuButton {
+    display: flex;
+  }
+}
+
+@media (max-width: 376px) {
+  .wrapper {
+    position: fixed;
+    z-index: 2;
+  }
+}

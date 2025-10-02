@@ -2,7 +2,6 @@ import styles from "./Hero.module.css";
 import HeroContent from "./HeroContent/HeroContent";
 import HeroMedia from "./HeroMedia/HeroMedia";
 import HeroSidebar from "./HeroSidebar/HeroSidebar";
-import TopAction from "./TopAction/TopAction";
 
 type Props = {
   title: string;
@@ -30,7 +29,6 @@ export default function Hero({
   return (
     <section className={styles.hero}>
       <div className={styles.left}>
-        {buttons.apk.enabled && <TopAction label={buttons.apk.label} />}
         <HeroContent title={title} subtitle={subtitle} buttons={buttons} />
       </div>
       <HeroMedia videoUrl={videoUrl} />

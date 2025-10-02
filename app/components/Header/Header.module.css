@@ -15,51 +15,48 @@
   gap: 20px;
 }
 
-.logo {
-  font-weight: 600;
-  text-decoration: none;
-  color: #0f172a;
-  font-size: 16px;
-  white-space: nowrap;
-}
-
 .nav {
   flex: 1;
   display: flex;
   justify-content: center;
 }
 
-.menu {
-  display: flex;
-  gap: 8px;
-  background: #0f0f12;
-  border-radius: 999px;
-  padding: 6px 10px;
-}
-
-.menu a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 14px;
-  padding: 8px 14px;
-  border-radius: 999px;
-  transition: background-color 0.2s;
-}
-
-.menu a:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
+.logoSlot {}
 
 .action {
   display: flex;
 }
 
-.pill {
-  background: #fff;
-  color: #0f172a;
-  font-size: 14px;
-  padding: 8px 16px;
-  border-radius: 999px;
-  text-decoration: none;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+@media (max-width: 768px) {
+  .inner {
+    gap: 12px;
+  }
+
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+  }
+
+  .nav {
+    order: 1;
+    flex: 0 0 auto;
+    justify-content: flex-start;
+  }
+
+  .logoSlot {
+    order: 2;
+  }
+
+  .action {
+    order: 3;
+    flex: 0 0 auto;
+  }
+}
+
+
+@media (max-width: 376px) {
+  .inner {
+    padding: 0;
+  }
 }

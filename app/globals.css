@@ -1,3 +1,12 @@
+:root {
+  --White: #ffffff;
+  --Black: #08050d;
+  --Extra-light: #f5f8fc;
+  --Violet-brand: #9488ec;
+  --Green-brand: #4fc661;
+  --Blue-brand: #7d9cfd;
+}
+
 html,
 body {
   margin: 0;

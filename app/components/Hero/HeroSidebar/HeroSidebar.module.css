@@ -25,11 +25,11 @@
 }
 
 .card:first-child {
-  flex-grow: 2;
+  flex: 2;
 }
 
 .card:last-child {
-  flex-grow: 5;
+  flex: 5;
 }
 
 .card:hover {
@@ -52,4 +52,17 @@
 
 .green {
   background: var(--Green-brand, #4fc661);
+}
+
+@media (max-width: 1200px) {
+  .sidebar {
+    flex-direction: row;
+    align-items: stretch; 
+  }
+}
+
+@media (max-width: 376px) {
+  .card:first-child {
+    min-height: 180px;
+  }
 }
