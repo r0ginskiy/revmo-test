@@ -4,6 +4,7 @@
   gap: 12px;
   padding: 12px 24px 24px 24px;
   background: var(--Extra-light, #EFF3F9);
+  margin-bottom: 24px;
 }
 
 .left {

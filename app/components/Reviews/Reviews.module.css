@@ -1,0 +1,63 @@
+.reviews {
+  padding: 24px;
+  background: var(--White, #fff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: calc(100vh - 80px);
+  position: relative;
+}
+
+.header {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.header h1 {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px;
+  margin: 0;
+  color: var(--Black, #08050d);
+}
+
+.header h2 {
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 42px;
+  color: var(--Black, #08050d);
+  margin: 0;
+}
+
+.blurCircle {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: var(--Blue-brand, #7d9cfd);
+  opacity: 0.3;
+  filter: blur(120px);
+  z-index: 0;
+}
+
+.slider {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.slider :global(.swiper-scrollbar.swiper-scrollbar-horizontal) {
+  border-radius: 12px;
+  background: var(--Extra-light, #eff3f9);
+  height: 4px;
+}
+
+.slider :global(.swiper-scrollbar-drag) {
+  border-radius: 12px;
+  background: var(--Blue-brand, #7d9cfd);
+}
+
