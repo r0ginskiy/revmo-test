@@ -16,6 +16,13 @@ body {
   background: var(--Extra-light, #eff3f9);
   color: #0f172a;
 }
+
 * {
   box-sizing: border-box;
+}
+
+#__next-build-watcher,
+#__next-route-announcer,
+[data-nextjs-dev-overlay] {
+  display: none;
 }

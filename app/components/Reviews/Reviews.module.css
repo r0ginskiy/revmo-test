@@ -61,3 +61,7 @@
   background: var(--Blue-brand, #7d9cfd);
 }
 
+.slider :global(.swiper-wrapper) {
+  align-items: flex-end; 
+}
+
